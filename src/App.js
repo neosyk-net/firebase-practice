@@ -1,4 +1,4 @@
-import "./App.Login";
+import "./App.css";
 import { auth } from "./firebase/init";
 import {
   createUserWithEmailAndPassword,
@@ -7,7 +7,6 @@ import {
 
 function App() {
   function register() {
-    console.log("calling");
     createUserWithEmailAndPassword(auth, "email@email.com", "test123")
       .then((user) => {
         console.log(user);
